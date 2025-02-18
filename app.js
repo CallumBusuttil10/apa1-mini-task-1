@@ -36,9 +36,23 @@ const recipe = {
   ]
 };
 
+const week = {
+  fav: "Friday",
+  days: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+  ]
+}
+
 // Route for the single page
 app.get('/', (req, res) => {
-  res.render('index', { recipe: recipe });
+  console.log('Data being passed:', { recipe, week });
+  res.render('index', { recipe, week });
 });
 
 // Start the server

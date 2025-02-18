@@ -9,6 +9,10 @@ html(lang="en")
   body
     .container
       h1= recipe.name
+      h1 Days of the week
+      ul
+        each day in week.days
+            li= day
       
       .recipe
         section
